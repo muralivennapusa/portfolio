@@ -1,4 +1,5 @@
 import './TopNavbar.css';
+import { Moon, Sun } from 'lucide-react';
 
 export default function TopNavbar({ darkMode, toggleDarkMode }) {
   return (
@@ -13,11 +14,9 @@ export default function TopNavbar({ darkMode, toggleDarkMode }) {
       </div>
 
       <div className="theme-toggle">
-        <label className="switch">
-          <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
-          <span className="slider round"></span>
-        </label>
-          <span className="theme-label">{darkMode ? '  🌙 Dark    ' : '  🌙 Dark    '}</span>
+        <button onClick={toggleDarkMode} className="theme-icon-btn" aria-label="Toggle Theme">
+          {darkMode ? <Moon size={22} /> : <Sun size={22} />}
+        </button>
       </div>
     </header>
   );
