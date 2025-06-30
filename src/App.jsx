@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Loader from './components/Loader';
 import TopNavbar from './components/TopNavbar';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -20,7 +19,7 @@ function App() {
     document.body.className = darkMode ? 'dark' : '';
   }, [darkMode]);
 
-  if (!loaded) return <Loader onComplete={() => setLoaded(true)} />;
+
 
   return (
     <div className="app">
