@@ -1,0 +1,78 @@
+.socials-section {
+  height: 100vh; /* Full screen */
+  width: 100vw;  /* Full width */
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertical centering */
+  align-items: center;      /* Horizontal centering */
+  padding: 2rem;
+  text-align: center;
+}
+
+.socials-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.socials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-card {
+  background-color: #1a1a1a; /* darker card */
+  color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.social-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.social-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+/* DARK MODE SUPPORT */
+body.dark .socials-section {
+  background-color: #121212;
+}
+
+body.dark .socials-title {
+  color: #f0f0f0;
+}
+
+body.dark .social-card {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.dark .social-card h3,
+body.dark .social-card p,
+body.dark .social-icon {
+  color: #222;
+}

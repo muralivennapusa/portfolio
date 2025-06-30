@@ -1,0 +1,87 @@
+.about-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 4rem; /* enough for navbar */
+  background-color: var(--about-bg, #fdfdfd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-inner {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+.profile-banner-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-text-content {
+  flex: 1;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.epithets {
+  font-size: 1.5rem;
+  color: #007bff;
+  font-family: 'Courier New', monospace;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: Georgia, serif;
+  color: #444;
+}
+
+body.dark .about-fullscreen {
+  background-color: #121212;
+}
+
+body.dark .description {
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .profile-banner-img {
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text-content {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+}

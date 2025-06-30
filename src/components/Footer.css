@@ -1,0 +1,17 @@
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #f0f0f0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+body.dark footer {
+  background-color: #1e1e1e;
+  color: white;
+}

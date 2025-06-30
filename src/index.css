@@ -1,0 +1,43 @@
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Dark mode toggle */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main content container (used in App.jsx) */
+.main-content {
+  padding-top: 4rem; /* keep enough space for separation */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
