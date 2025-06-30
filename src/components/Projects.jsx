@@ -3,46 +3,46 @@ import Slider from 'react-slick';
 import './Projects.css';
 
 const projects = [
-  {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio built with React and Vite.',
-    link: 'https://github.com/muralivennapusa/portfolio'
-  },
-  {
-    title: 'UniLang',
-    description: 'Multilingual NLP that addresses queries.',
-    link: 'https://github.com/muralivennapusa/UniLang'
-  },
-  {
-    title: 'Project Citizen',
-    description: 'Cybercrime Case classifier that can be accessed by citizens and complaint registration.',
-    link: 'https://github.com/muralivennapusa/Cyber-Project-v2'
-  },
-  {
-    title: 'Mirus',
-    description: 'Virus Total API powered link and file analyzer.',
-    link: 'https://github.com/muralivennapusa/Mirus'
-  },
-  {
-    title: 'Manga Gari',
-    description: 'Web Scraping Program to scrape graphic novels or comics from websites and make PDFs.',
-    link: 'https://github.com/muralivennapusa/Manga-Gari'
-  },
-  {
-    title: 'Project OnePiece',
-    description: 'Web Scraping program to extract episode summary and make it into an audio to listen on the go.',
-    link: 'https://github.com/muralivennapusa/Project-OnePiece'
-  },
-  {
-    title: 'Project Emo',
-    description: 'Emotion analyzer for quick situation assessment for police department.',
-    link: '#'
-  },
-  {
-    title: 'Fav Chars',
-    description: 'Tribute page to all my Favourite Fictitonal Characters.',
-    link: 'https://fav-chars.vercel.app'
-  },
+{
+  title: 'Portfolio Website',
+  description: 'Personal portfolio built using React and Vite.',
+  link: 'https://github.com/muralivennapusa/portfolio'
+},
+{
+  title: 'UniLang',
+  description: 'Multilingual NLP system that answers user queries.',
+  link: 'https://github.com/muralivennapusa/UniLang'
+},
+{
+  title: 'Project Citizen',
+  description: 'Cybercrime case classifier with citizen complaint support.',
+  link: 'https://github.com/muralivennapusa/Cyber-Project-v2'
+},
+{
+  title: 'Mirus',
+  description: 'VirusTotal API-based link and file scanner.',
+  link: 'https://github.com/muralivennapusa/Mirus'
+},
+{
+  title: 'Manga Gari',
+  description: 'Web scraper that extracts comics and converts to PDFs.',
+  link: 'https://github.com/muralivennapusa/Manga-Gari'
+},
+{
+  title: 'Project OnePiece',
+  description: 'Scrapes episode summaries and converts them to audio.',
+  link: 'https://github.com/muralivennapusa/Project-OnePiece'
+},
+{
+  title: 'Project Emo',
+  description: 'Emotion analyzer for rapid police situation insight.',
+  link: '#'
+},
+{
+  title: 'Fav Chars',
+  description: 'Tribute site for all my favorite fictional characters.',
+  link: 'https://fav-chars.vercel.app'
+},
 
 
   // Add more projects here...
