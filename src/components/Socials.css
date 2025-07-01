@@ -8,6 +8,7 @@
   align-items: center;      /* Horizontal centering */
   padding: 2rem;
   text-align: center;
+  background: transparent;
 }
 
 .socials-title {
@@ -59,7 +60,8 @@
 
 /* DARK MODE SUPPORT */
 body.dark .socials-section {
-  background-color: #121212;
+  background: transparent;
+  /* background-color: #121212; */
 }
 
 body.dark .socials-title {
