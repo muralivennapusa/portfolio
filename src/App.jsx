@@ -4,12 +4,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Socials from './components/Socials';
 import Footer from './components/Footer';
+import Starfield from './components/Starfield';
 import AOS from 'aos';
 import './index.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -19,19 +19,18 @@ function App() {
     document.body.className = darkMode ? 'dark' : '';
   }, [darkMode]);
 
-
-
   return (
     <div className="app">
+      <Starfield darkMode={darkMode} />
       <TopNavbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
-      <About /> {/* Fullscreen on its own */}
+      <About />
       <Projects />
-      <div className="main-content">
-      </div>
-        <Socials />
-        <Footer />
+      <Socials />
+      <Footer />
     </div>
   );
 }
+
+
 
 export default App;

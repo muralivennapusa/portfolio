@@ -1,0 +1,17 @@
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.4); /* For light mode */
+  transition: background-color 0.3s ease;
+}
+
+body.dark .starfield {
+  background-color: rgba(0, 0, 0, 0.4); /* For dark mode */
+}
+
+  
